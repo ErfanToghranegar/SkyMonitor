@@ -1,46 +1,55 @@
-# SkyMonitor
-پروژه وضعیت آب و هوا و پوشش گیاهی
-این پروژه یک برنامه ساده به زبان پایتون است که وضعیت دمای هوا و پوشش گیاهی (بر اساس رطوبت نسبی) را برای یک شهر مشخص نمایش می‌دهد. داده‌ها از API سرویس Weatherbit گرفته می‌شوند.
+Weather and Vegetation Status Project
+This is a simple Python project that retrieves the current temperature and humidity of a specified city using the Weatherbit API, then analyzes and displays:
 
-قابلیت‌ها
-دریافت نام شهر از کاربر
+Weather condition based on temperature
 
-گرفتن اطلاعات دما و رطوبت فعلی شهر از API
+Vegetation cover estimate based on relative humidity
 
-تحلیل ساده دما برای تعیین وضعیت هوا (گرم، معتدل، سرد)
+A simple line chart of temperature and humidity over time
 
-تحلیل ساده رطوبت برای تخمین وضعیت پوشش گیاهی (رشد خوب، متوسط، ضعیف)
+Features
+Get city name from user input
 
-نمایش مقادیر دما و رطوبت در قالب نمودار
+Fetch current temperature and humidity using Weatherbit API
 
-پیش‌نیازها
-نصب پایتون (نسخه 3.6 به بالا)
+Analyze weather status (Hot / Moderate / Cold)
 
-نصب کتابخانه‌های مورد نیاز:
+Estimate vegetation growth (Good / Moderate / Poor) based on humidity
+
+Display temperature and humidity in a line chart using matplotlib
+
+Requirements
+Python 3.6 or above
+
+Install required packages:
 
 bash
 Copy code
 pip install requests matplotlib
-نحوه استفاده
-کلون یا دانلود پروژه
+How to Use
+Clone or download the project
 
-در ترمینال یا خط فرمان وارد پوشه پروژه شوید
+Navigate to the project folder
 
-کلید API رایگان خود را از سایت Weatherbit دریافت و در کد جایگزین کنید (متغیر api_key)
+Get your free API key from Weatherbit
 
-برنامه را اجرا کنید:
+Replace the api_key variable in the script with your key
+
+Run the script:
 
 bash
 Copy code
 python your_script_name.py
-نام شهر مورد نظر را وارد کنید
+Enter the desired city name when prompted
 
-نتیجه دما و وضعیت پوشش گیاهی نمایش داده شده و نمودار رسم می‌شود
+The script will display weather and vegetation status and show a plot
 
-نکات
-این برنامه به عنوان نمونه آموزشی نوشته شده و تحلیل پوشش گیاهی بر اساس رطوبت نسبی ساده است و به داده‌های تخصصی نیاز دارد.
+Notes
+This script is intended for educational and demonstration purposes.
 
-برای استفاده در پروژه‌های واقعی بهتر است از APIهای تخصصی پوشش گیاهی استفاده شود.
+The vegetation estimation is simplified and based only on relative humidity.
 
-لایسنس
-این پروژه تحت مجوز MIT منتشر شده است.
+For real-world applications, consider using specialized vegetation or NDVI data sources.
+
+License
+This project is licensed under the MIT License.
