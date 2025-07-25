@@ -34,6 +34,6 @@ pip install requests matplotlib
 4. Replace the `api_key` variable in the script with your key  
 5. Run the script:  
 ```bash
-python your_script_name.py
+SkyMonitor.py
 
 
