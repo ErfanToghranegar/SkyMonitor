@@ -24,5 +24,16 @@ This is a simple Python project that retrieves the current temperature and humid
 - Install required packages:  
 ```bash
 pip install requests matplotlib
+```
+
+## How to Use
+
+1. Clone or download the project  
+2. Navigate to the project folder  
+3. Get your free API key from [Weatherbit](https://www.weatherbit.io/)  
+4. Replace the `api_key` variable in the script with your key  
+5. Run the script:  
+```bash
+python your_script_name.py
 
 
